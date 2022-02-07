@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="parallel" thread-count="4" parallel="tests">
+
+	<test name="SingleTest-Chrome">
+		<parameter name="config" value="parallel-test.conf.json" />
+		<parameter name="environment" value="chrome" />
+		<parameter name="remote" value="true" />
+
+		<packages>
+			<package
+				name="com.browserstack.technicalonboarding.percy.tests" />
+		</packages>
+	</test>
+
+	<test name="SingleTest-Firefox">
+		<parameter name="config" value="parallel-test.conf.json" />
+		<parameter name="environment" value="firefox" />
+		<parameter name="remote" value="true" />
+
+		<packages>
+			<package
+				name="om.browserstack.technicalonboarding.percy.tests" />
+		</packages>
+	</test>
+
+
+</suite>

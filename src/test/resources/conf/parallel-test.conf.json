@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+  "capabilities": {
+    "browserstack.use_w3c": true,
+    "bstack:options": {
+      "os": "Windows",
+      "osVersion": "7",
+      "sessionName": "parallel_test",
+      "buildName": "cucumber-testng-browserstack-technical-onboarding",
+      "projectName": "Amazon Product Search",
+      "debug": true
+    }
+  },
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox":{
+    	"browser":"firefox"
+    }
+  }
+}
